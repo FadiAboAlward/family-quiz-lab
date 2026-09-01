@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Family Quiz Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="topbar" class="topbar hidden">
+    <div class="topinner">
+      <div id="brand" class="brand">Family Quiz Lab</div>
+      <div id="cloudStatus" class="pill">Yerel kayıt</div>
+      <div id="answered" class="pill">0/0</div>
+      <div id="timer" class="timer">00:00</div>
+    </div>
+    <div class="track"><div id="bar" class="bar"></div></div>
+  </div>
+
+  <main class="wrap">
+    <section id="loading" class="card hero"><h1>Sınav hazırlanıyor…</h1></section>
+
+    <section id="start" class="card hero hidden">
+      <div class="eyebrow">Family Quiz Lab</div>
+      <h1 id="startTitle"></h1>
+      <p id="startDescription" class="muted"></p>
+      <div id="startMeta" class="meta"></div>
+      <div class="card" style="box-shadow:none;background:#fbfcff">
+        <strong>Kurallar</strong>
+        <p class="muted">Doğru/yanlış sınav sırasında gösterilmez. Hedef süre dolunca sınav kapanmaz; sayaç ek süreyi göstermeye devam eder. Cevaplar bu cihazda otomatik kaydedilir; bulut bağlantısı etkinleştirildiğinde aynı bağlantı başka cihazdan da devam ettirilebilir.</p>
+      </div>
+      <div class="startrow"><input id="name" type="text" value="Aya"><button id="startBtn" class="btn primary">Sınava başla</button></div>
+      <div id="resumeBox" class="hidden" style="margin-top:12px"><button id="resumeBtn" class="btn secondary">Kaldığım yerden devam et</button><button id="resetBtn" class="btn danger">Yeni deneme</button></div>
+    </section>
+
+    <section id="exam" class="exam">
+      <div class="card"><div id="stepper" class="stepper"></div><div class="pagehead"><div><h2 id="pageTitle"></h2><div id="pageSub" class="muted"></div></div><div id="pageNo" class="muted"></div></div></div>
+      <div id="questions"></div>
+      <div class="navbar"><div class="navinfo"><strong id="navTitle"></strong><div id="navSub" class="muted" style="font-size:.85rem"></div></div><button id="copyBtn" class="btn secondary">Linki kopyala</button><button id="prevBtn" class="btn secondary">← Önceki</button><button id="nextBtn" class="btn primary">Sonraki →</button><button id="finishBtn" class="btn primary hidden">Sınavı bitir</button></div>
+    </section>
+
+    <section id="results" class="results">
+      <div class="card hero"><div class="muted">Sınav tamamlandı</div><h1 id="resultName"></h1><div id="bigScore" class="bigscore"></div><div id="resultMeta" class="muted"></div><div id="verdict" class="verdict"></div><div id="cloudNotice" class="muted" style="margin-top:9px"></div><div id="scoreGrid" class="grid"></div><div class="meta"><button id="copyResult" class="btn secondary">Sonuç linkini kopyala</button><button onclick="window.print()" class="btn secondary">Yazdır / PDF</button><button id="newBtn" class="btn danger">Yeni deneme</button></div></div>
+      <div class="card"><h2>Kavram teşhisi</h2><div id="concepts" class="tags"></div></div>
+      <div class="card"><h2>Açıklamalı sonuç</h2><div class="muted">Yanlış ve boş sorular aşağıda derslere göre gruplanır.</div><div id="report"></div></div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden"><div class="modalbox"><h2>Sınavı bitirmek istiyor musun?</h2><p id="modalText" class="muted"></p><div class="meta" style="justify-content:flex-end"><button id="cancel" class="btn secondary">Geri dön</button><button id="confirm" class="btn primary">Teslim et</button></div></div></div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
