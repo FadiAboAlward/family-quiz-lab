@@ -1,0 +1,31 @@
+{
+  "id": "aya-math-repair-01",
+  "title": "Matematik Repair Quiz",
+  "shortTitle": "Math Repair",
+  "description": "Önceki odak sınavında kalan matematik hata alanlarını yeniden ölçer. Sorular yeni sayılar ve farklı bağlamlarla hazırlanmıştır; amaç ezber değil, kavramın gerçekten oturup oturmadığını görmek.",
+  "studentDefault": "Aya",
+  "targetMinutes": 25,
+  "pages": [
+    {"title":"Bölme","subtitle":"İşlem ve eşit paylaştırma mantığını kontrol ediyoruz.","nums":[1,2,3,4]},
+    {"title":"Çarpma ve Kesir","subtitle":"Çarpma işlemi ve 1/2 ile kesir karşılaştırması.","nums":[5,6,7,8,9]},
+    {"title":"Zaman ve Uzunluk","subtitle":"Dakika-saat geçişi ve m-cm problemleri.","nums":[10,11,12,13]},
+    {"title":"Fen Mini Kontrol","subtitle":"Enerji ve protein kavramlarını son kez kontrol ediyoruz.","nums":[14,15]}
+  ],
+  "questions": [
+    {"n":1,"section":"Matematik","skill":"Bölme","q":"672 ÷ 14 işleminin sonucu kaçtır?","opts":["42","46","48","52"],"a":2,"exp":"14 × 48 = 672 olduğu için 672 ÷ 14 = 48.","tip":"Bölme sonucunu çarpma ile kontrol et: bölen × sonuç = bölünen."},
+    {"n":2,"section":"Matematik","skill":"Bölme","q":"945 ÷ 21 işleminin sonucu kaçtır?","opts":["35","40","45","50"],"a":2,"exp":"21 × 45 = 945, dolayısıyla sonuç 45'tir.","tip":"Yakın bir çarpımdan başla: 21 × 40 = 840; kalan 105 = 21 × 5."},
+    {"n":3,"section":"Matematik","skill":"Bölme · problem","q":"864 çıkartma 24 öğrenciye eşit olarak dağıtılıyor. Her öğrenci kaç çıkartma alır?","opts":["32","34","36","38"],"a":2,"exp":"Eşit dağıtma bölme işlemidir: 864 ÷ 24 = 36.","tip":"Soruda 'eşit olarak dağıtılıyor' görürsen bölmeyi düşün."},
+    {"n":4,"section":"Matematik","skill":"Bölme · problem","q":"725 elma 25 kasaya eşit olarak yerleştiriliyor. Her kasada kaç elma olur?","opts":["25","27","29","31"],"a":2,"exp":"725 ÷ 25 = 29 çünkü 25 × 29 = 725.","tip":"25 ile bölmede 25'in katlarını düşün: 25 × 30 = 750; bir 25 çıkarınca 725 kalır."},
+    {"n":5,"section":"Matematik","skill":"Çarpma","q":"34 × 27 işleminin sonucu kaçtır?","opts":["818","888","918","948"],"a":2,"exp":"34 × 27 = 34 × (20 + 7) = 680 + 238 = 918.","tip":"İkinci çarpanı onlar ve birler basamağına ayırabilirsin."},
+    {"n":6,"section":"Matematik","skill":"Çarpma","q":"46 × 18 işleminin sonucu kaçtır?","opts":["728","808","828","848"],"a":2,"exp":"46 × 18 = 46 × (20 - 2) = 920 - 92 = 828.","tip":"İstersen 18'i 20 - 2 şeklinde düşünerek daha kolay hesaplayabilirsin."},
+    {"n":7,"section":"Matematik","skill":"Çarpma · problem","q":"23 kutunun her birinde 16 kalem vardır. Toplam kaç kalem vardır?","opts":["348","358","368","378"],"a":2,"exp":"23 × 16 = 368.","tip":"'Her birinde' ve 'toplam kaç' birlikteyse çoğu zaman çarpma gerekir."},
+    {"n":8,"section":"Matematik","skill":"Kesir · karşılaştırma","q":"Aşağıdaki kesirlerden hangisi 1/2'den büyüktür?","opts":["3/8","4/10","5/8","5/12"],"a":2,"exp":"5/8, 1/2'den büyüktür. 8'in yarısı 4'tür; pay 5 olduğu için yarımdan fazladır.","tip":"Bir kesri 1/2 ile karşılaştırırken paydanın yarısını bul."},
+    {"n":9,"section":"Matematik","skill":"Kesir · karşılaştırma","q":"Aşağıdaki kesirlerden hangisi en büyüktür?","opts":["3/6","5/10","7/10","4/8"],"a":2,"exp":"3/6, 5/10 ve 4/8'in hepsi 1/2'ye eşittir. 7/10 ise 1/2'den büyüktür.","tip":"Önce 1/2'ye eşit olanları fark etmeye çalış."},
+    {"n":10,"section":"Matematik","skill":"Zaman · süre","q":"Saat 10.45'te başlayan bir etkinlik 1 saat 35 dakika sürüyor. Etkinlik saat kaçta biter?","opts":["11.20","12.10","12.20","12.30"],"a":2,"exp":"10.45 + 1 saat = 11.45. 35 dakika daha eklenince 12.20 olur.","tip":"Dakikalar 60'ı geçince 1 saat oluştuğunu unutma."},
+    {"n":11,"section":"Matematik","skill":"Zaman · geri hesaplama","q":"Bir ders saat 17.10'da bitti ve 1 saat 45 dakika sürdü. Ders saat kaçta başlamıştır?","opts":["15.15","15.25","15.35","16.25"],"a":1,"exp":"17.10 - 1 saat 45 dakika = 15.25.","tip":"10 dakikadan 45 dakika çıkarılamadığı için bir saat bozup 70 dakika olarak düşün."},
+    {"n":12,"section":"Matematik","skill":"Uzunluk · problem","q":"3 m 40 cm uzunluğundaki bir kurdeleye 75 cm daha ekleniyor. Yeni uzunluk kaç santimetredir?","opts":["345 cm","405 cm","415 cm","475 cm"],"a":2,"exp":"3 m 40 cm = 340 cm. 340 + 75 = 415 cm.","tip":"İşlem yapmadan önce bütün uzunlukları aynı birime çevir."},
+    {"n":13,"section":"Matematik","skill":"Uzunluk · m-cm karşılaştırma","q":"Aşağıdakilerden hangisi daha uzundur?","opts":["480 cm","4 m 90 cm","İkisi eşittir","Karşılaştırılamaz"],"a":1,"exp":"4 m 90 cm = 490 cm. 490 cm, 480 cm'den daha uzundur.","tip":"Karşılaştırmadan önce iki ölçüyü de santimetreye çevir."},
+    {"n":14,"section":"Fen Bilimleri","skill":"Besinler · enerji","q":"Aşağıdaki besinlerden hangisi karbonhidrat bakımından genellikle daha zengindir?","opts":["Ekmek","Yumurta","Su","Tuz"],"a":0,"exp":"Ekmek karbonhidrat bakımından zengin bir besindir ve enerji sağlamaya yardımcı olur.","tip":"Karbonhidrat → enerji. Ekmek, pirinç, makarna gibi besinleri hatırla."},
+    {"n":15,"section":"Fen Bilimleri","skill":"Besinler · görev eşleştirme","q":"Aşağıdaki eşleştirmelerden hangisi doğrudur?","opts":["Protein → yalnızca susuzluğu giderir","Karbonhidrat → temel enerji kaynaklarından biridir","Vitamin → yalnızca kas yapar","Su → büyüme için tek gerekli besindir"],"a":1,"exp":"Karbonhidratlar vücudun temel enerji kaynaklarındandır. Proteinler ise büyüme, gelişme ve yapım-onarımda önemlidir.","tip":"Karbonhidrat = enerji; protein = büyüme ve onarım."}
+  ]
+}
