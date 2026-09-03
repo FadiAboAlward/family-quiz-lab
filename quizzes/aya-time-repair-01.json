@@ -1,0 +1,23 @@
+{
+  "id": "aya-time-repair-01",
+  "title": "Zaman Repair Mini Quiz",
+  "shortTitle": "Zaman Repair",
+  "description": "Son Kesir + Zaman sınavında kalan üç zaman hatasına odaklanır: başlangıç saatini geri hesaplama, süre eklerken dakikaları saate çevirme ve iki aşamalı zaman problemleri. Önce konu anlatımını izle, sonra bu quiz'i çöz.",
+  "studentDefault": "Aya",
+  "targetMinutes": 15,
+  "pages": [
+    {"title":"Başlangıç Saatini Bulma","subtitle":"Bitiş saatinden süreyi çıkar; dakika yetmiyorsa 1 saati 60 dakikaya çevir.","nums":[1,2,3]},
+    {"title":"Süre Ekleme","subtitle":"Dakikalar 60'ı geçtiğinde 60 dakikayı 1 saate dönüştür.","nums":[4,5]},
+    {"title":"Karışık Zaman Problemleri","subtitle":"Her aşamanın sonucunu ayrı yaz ve sonra sonraki adıma geç.","nums":[6,7,8]}
+  ],
+  "questions": [
+    {"n":1,"section":"Matematik","skill":"Zaman · geri hesaplama","q":"Bir ders saat 17.20'de bitti ve 1 saat 45 dakika sürdü. Ders saat kaçta başladı?","opts":["15.25","15.35","15.45","16.35"],"a":1,"exp":"🕒 1) Bitiş saati 17.20. ➖ 2) 20 dakikadan 45 dakika çıkarılamaz. 🔄 3) 1 saat ödünç al: 17.20 → 16 saat 80 dakika. 🧮 4) 16:80 - 1:45 = 15:35. ✅ 5) Ders 15.35'te başlamıştır.","tip":"Dakika yetmiyorsa saatten 1 çıkar, dakikaya 60 ekle."},
+    {"n":2,"section":"Matematik","skill":"Zaman · geri hesaplama","q":"Bir etkinlik saat 13.05'te bitti ve 50 dakika sürdü. Etkinlik saat kaçta başladı?","opts":["12.05","12.15","12.25","12.55"],"a":1,"exp":"🕒 1) Bitiş 13.05. ➖ 2) 5 dakikadan 50 çıkarılamaz. 🔄 3) 1 saat ödünç al: 13.05 → 12 saat 65 dakika. 🧮 4) 65 - 50 = 15 dakika. ✅ 5) Başlangıç 12.15'tir.","tip":"Sadece dakika çıkarırken bile gerektiğinde 1 saat = 60 dakika bozabilirsin."},
+    {"n":3,"section":"Matematik","skill":"Zaman · geri hesaplama","q":"Bir film saat 20.10'da bitti ve 2 saat 35 dakika sürdü. Film saat kaçta başladı?","opts":["17.25","17.30","17.35","18.35"],"a":2,"exp":"🕒 1) Bitiş 20.10. ➖ 2) 10 dakikadan 35 çıkarılamaz. 🔄 3) 1 saat ödünç al: 20.10 → 19 saat 70 dakika. 🧮 4) 19:70 - 2:35 = 17:35. ✅ 5) Film 17.35'te başlamıştır.","tip":"Önce dakikayı çıkar, sonra saati çıkar; dakika yetmezse saatten ödünç al."},
+    {"n":4,"section":"Matematik","skill":"Zaman · süre ekleme","q":"Saat 09.45'te başlayan bir çalışma 1 saat 30 dakika sürüyor. Saat kaçta biter?","opts":["10.15","10.75","11.15","11.25"],"a":2,"exp":"🕒 1) Başlangıç 09.45. ➕ 2) 1 saat ekle: 10.45. ➕ 3) 30 dakika ekle: 10.75 olur. 🔄 4) 75 dakika = 1 saat 15 dakika, yani 11.15. ✅ 5) Bitiş 11.15'tir.","tip":"Dakikalar 60'ı geçerse 60 dakikayı 1 saate dönüştür."},
+    {"n":5,"section":"Matematik","skill":"Zaman · süre ekleme","q":"Bir gezi saat 14.50'de başladı ve 2 saat 25 dakika sürdü. Gezi saat kaçta biter?","opts":["16.15","16.75","17.15","17.25"],"a":2,"exp":"🕒 1) Başlangıç 14.50. ➕ 2) 2 saat ekle: 16.50. ➕ 3) 25 dakika ekle: 16.75. 🔄 4) 75 dakika = 1 saat 15 dakika, bu yüzden 17.15. ✅ 5) Gezi 17.15'te biter.","tip":"Önce saatleri, sonra dakikaları eklemek işi kolaylaştırır."},
+    {"n":6,"section":"Matematik","skill":"Zaman · karışık problem","q":"Ayşe saat 16.35'te ders çalışmaya başladı. 1 saat 20 dakika çalıştı, sonra 25 dakika dinlendi. Dinlenmesi saat kaçta bitti?","opts":["17.55","18.10","18.20","18.30"],"a":2,"exp":"🕒 1) Başlangıç 16.35. ➕ 2) 1 saat 20 dakika ekle: 17.55. ☕ 3) Şimdi 25 dakika dinlenme ekle. 🔄 4) 17.55 + 25 dakika = 18.20. ✅ 5) Dinlenmesi 18.20'de biter.","tip":"İki aşamalı sorularda ilk aşamanın sonucunu mutlaka ayrı yaz."},
+    {"n":7,"section":"Matematik","skill":"Zaman · karışık problem","q":"Bir kurs saat 11.50'de başladı. İlk ders 45 dakika sürdü, sonra 15 dakika ara verildi ve ikinci ders 50 dakika sürdü. Kurs saat kaçta bitti?","opts":["13.25","13.35","13.40","13.50"],"a":2,"exp":"🕒 1) 11.50 + 45 dakika = 12.35. ☕ 2) 15 dakika ara ekle: 12.50. ➕ 3) İkinci ders 50 dakika. 🔄 4) 12.50 + 50 dakika = 13.40. ✅ 5) Kurs 13.40'ta biter.","tip":"Her bölümü sırayla ekle: ders → ara → ders."},
+    {"n":8,"section":"Matematik","skill":"Zaman · süre bulma","q":"Bir etkinlik saat 12.35'te başladı ve 15.10'da bitti. Etkinlik ne kadar sürdü?","opts":["2 saat 25 dakika","2 saat 35 dakika","2 saat 45 dakika","3 saat 35 dakika"],"a":1,"exp":"🕒 1) 12.35'ten 13.00'a 25 dakika var. ⏱️ 2) 13.00'dan 15.00'a 2 saat var. ⏱️ 3) 15.00'dan 15.10'a 10 dakika var. ➕ 4) 25 dk + 2 saat + 10 dk = 2 saat 35 dakika. ✅ 5) Süre 2 saat 35 dakikadır.","tip":"Zor gelirse zamanı tam saatlere bölerek ilerle."}
+  ]
+}
